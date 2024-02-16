@@ -11,6 +11,34 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'usuarios',
+    loadChildren: () => import('./usuarios/usuarios.module').then( m => m.UsuariosPageModule)
+  },
+  {
+    path: 'mensajes',
+    loadChildren: () => import('./mensajes/mensajes.module').then( m => m.MensajesPageModule)
+  },
+  {
+    path: 'balance',
+    loadChildren: () => import('./balance/balance.module').then( m => m.BalancePageModule)
+  },
+  {
+    path: 'productos',
+    loadChildren: () => import('./productos/productos.module').then( m => m.ProductosPageModule)
+  },
+  {
+    path: 'detalleproductos',
+    loadChildren: () => import('./detalleproductos/detalleproductos.module').then( m => m.DetalleproductosPageModule)
+  },
+  {
+    path: 'mapa',
+    loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  },
 ];
 
 @NgModule({

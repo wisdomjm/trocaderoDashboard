@@ -1,0 +1,82 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>TrocaderoApp</ion-title>
+    <ion-avatar slot="end" style="margin-right: 12px; display: flex; align-items: center;">
+      <img src="../../assets/icon/trocaderologo.jpg" alt="" style="width: 42px; height: 42px;">
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="main-content">
+    <div class="side-left">
+        <ion-list>
+          <ion-item lines="none" routerLink="/dashboard">
+            <i class='bx bxs-dashboard texto-violeta' ></i> 
+            <p style="font-size: 18px; font-weight: 300; margin-left: 16px;">
+              Dashboard
+            </p>
+          </ion-item>
+          <ion-item lines="none" routerLink="/usuarios">
+            <i class='bx bxs-user-detail texto-violeta' ></i> 
+            <p style="font-size: 18px; font-weight: 300; margin-left: 16px;">
+              Usuarios
+            </p>
+          </ion-item>
+          <ion-item lines="none" routerLink="/productos">
+            <i class='bx bx-store texto-violeta' ></i> 
+            <p style="font-size: 18px; font-weight: 300; margin-left: 16px;">
+              Productos
+            </p>
+          </ion-item>
+          <ion-item lines="none" routerLink="/mapa">
+            <i class='bx bx-map-alt texto-violeta' ></i> 
+            <p style="font-size: 18px; font-weight: 300; margin-left: 16px;">
+              Mapa
+            </p>
+          </ion-item>
+          <ion-item lines="none" routerLink="/mensajes">
+            <i class='bx bx-message-rounded-dots texto-violeta' ></i> 
+            <p style="font-size: 18px; font-weight: 300; margin-left: 16px;">
+              Chat
+            </p>
+          </ion-item>
+        </ion-list>
+    </div>
+    <div class="side-right">
+      <h1 class="header-page texto-negro-50">Dashboard</h1>
+
+
+      <div class="cuadricula">
+
+        <div class="columna-01">
+
+          <!--LISTA DE DATOS PRINCIPALES-->
+          <div class="dashboard-datos">
+            <div class="datos shadow-box">
+              <span><i class='bx bx-user-check texto-violeta'></i> <p>USUARIOS </p></span>
+              <H1 class="texto-negro-50">100K</H1> 
+            </div>
+
+            <div class="datos shadow-box">
+              <span><i class='bx bx-store texto-violeta' ></i> <p>PRODUCTOS </p></span>
+              <H1 class="texto-negro-50">100K</H1> 
+            </div>
+          </div>
+
+        </div>
+
+        <div class="columna-02">
+          <div class="right-information shadow-box ion-padding">
+            <h1>Informacion</h1>
+          </div>
+
+        </div>
+
+      </div>
+
+      
+    </div>
+  </div>
+
+</ion-content>
